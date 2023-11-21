@@ -27,4 +27,13 @@ Essa solução consiste em um dispositivo instalado capaz de realizar medições
 <div align="center">
   <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/a0c4fed0-9a8e-486f-b9e0-67f846552910" width=700px>
 </div>
-  
+Os dados são coletados por esse circuito, e o ESP32 conectado à internet pode enviá-los para sistemas de monitoramento. Desde o software do profissional de saúde que possúi clientes cadastrados a fim de acompanhar a salubridade dos ambientes em que eles estão inseridos podendo realizar orientações médicas a fim de prevenir doenças, até mensagens de alerta para o celular do paciente, para que ele receba avisos em tempo real dependendo das condições do ambiente. 
+<div display="flex">
+  <img src="" width=700px>
+  <img src="" width=700px>
+</div>
+O fluxo IoT dessa aplicação funciona da seguinte forma: O circuito do dispositivo da HealthGuard EnviroMonitor coleta as informações e envia pelo ESP32 via protocolo MQTT para algum broker, disponibilizando as informações. O servidor local do sistema recebe os dados via tópico MQTT e converte-os para dashboards visuais para o profissional de saúde e também faz o envio do alerta vioa WhatsApp para o paciente. Como demonstrado no fluxo a seguir:
+<div align="center">
+  <img src="" width=700px>
+</div>
+
