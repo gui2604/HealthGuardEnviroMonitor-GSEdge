@@ -9,16 +9,19 @@ Essa solução consiste em um dispositivo instalado capaz de realizar medições
 <div align="center">
   <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/be968a3a-ba93-4c6c-a674-1b3ed451bb31" width="700px">
 </div>
-- Componentes Utilizados no Circuito:
-  - ESP32
-  - DHT22(sensor de umidade e temperatura)
-  - LDR (sensor de luz)
-  - LED's (vermelho, amarelo e verde)
-  - 3 resistores 220 Ohms
-  - 1 resistor 10 kOhms
-  - 1 Protoboard
-  - 5 cabos macho-macho
-  - 8 cabos macho-femea
-  - 1 cabo femea-femeea
-  - 1 cabo micro-USB
+## Componentes Utilizados no Circuito:
+<li>
+  <ul>ESP32</ul>
+  <ul>DHT22(sensor de umidade e temperatura)</ul>
+  <ul>LDR (sensor de luz)</ul>
+  <ul>LED's (vermelho, amarelo e verde)</ul>
+  <ul>3 resistores 220 Ohms</ul>
+  <ul>1 resistor 10 kOhms</ul>
+  <ul>1 Protoboard</ul>
+  <ul>5 cabos macho-macho</ul>
+  <ul>8 cabos macho-femea</ul>
+  <ul>1 cabo femea-femeea</ul>
+  <ul>1 cabo micro-USB</ul>
+</li>
+  
   
