@@ -9,7 +9,7 @@ Essa solução consiste em um dispositivo instalado capaz de realizar medições
 <div align="center">
   <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/be968a3a-ba93-4c6c-a674-1b3ed451bb31" width=700px>
 </div>
-## Componentes Utilizados no Circuito:
+<h2>Componentes Utilizados no Circuito:</h2>
 <li>
   <ul>- ESP32</ul>
   <ul>- DHT22(sensor de umidade e temperatura)</ul>
@@ -23,7 +23,7 @@ Essa solução consiste em um dispositivo instalado capaz de realizar medições
   <ul>- 1 cabo femea-femeea</ul>
   <ul>- 1 cabo micro-USB</ul>
 </li>
-## Tela do Circuito:
+<h2>Tela do Circuito:</h2>
 <div align="center">
   <img src="" width=700px>
 </div>
