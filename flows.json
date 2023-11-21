@@ -1,0 +1,421 @@
+[
+    {
+        "id": "8f865d0fb0191d7e",
+        "type": "tab",
+        "label": "HealthGuard EnviroMonitor - GS Edge",
+        "disabled": false,
+        "locked": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9a8913f3b97bc902",
+        "type": "mqtt in",
+        "z": "8f865d0fb0191d7e",
+        "name": "MQTT DHT22",
+        "topic": "FIAP/edgeGS/HealthGuardEnviroMonitor/TempHumi",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe9073219b92d4c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 430,
+        "y": 340,
+        "wires": [
+            [
+                "1254815cf083d8e7",
+                "a0c54b99f696f9b4"
+            ]
+        ]
+    },
+    {
+        "id": "1254815cf083d8e7",
+        "type": "change",
+        "z": "8f865d0fb0191d7e",
+        "name": "Temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temperatura",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "fcccbbdaf8b8844f",
+                "ff39443b718f6ed8"
+            ]
+        ]
+    },
+    {
+        "id": "a0c54b99f696f9b4",
+        "type": "change",
+        "z": "8f865d0fb0191d7e",
+        "name": "Umidade",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.umidade",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 360,
+        "wires": [
+            [
+                "34ac3995d6ca8e2b",
+                "fcccbbdaf8b8844f"
+            ]
+        ]
+    },
+    {
+        "id": "24ed58d90d92682e",
+        "type": "change",
+        "z": "8f865d0fb0191d7e",
+        "name": "Luminosidade",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.luminosidade",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 420,
+        "wires": [
+            [
+                "fcccbbdaf8b8844f",
+                "6768ad61e39fa4f2"
+            ]
+        ]
+    },
+    {
+        "id": "34ac3995d6ca8e2b",
+        "type": "ui_gauge",
+        "z": "8f865d0fb0191d7e",
+        "name": "",
+        "group": "9d4e3665ca67a014",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 880,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "fcccbbdaf8b8844f",
+        "type": "debug",
+        "z": "8f865d0fb0191d7e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8c8de4c11ed2668a",
+        "type": "node-red-contrib-whatsapp-cmb-send-message",
+        "z": "8f865d0fb0191d7e",
+        "name": "",
+        "credtype": "account",
+        "account": "8c6b47122060518d",
+        "text": "payload",
+        "phonenumbervalue": "",
+        "apikeyvalue": "",
+        "apikeyinputtypemessage": "msg",
+        "phonenumberinputtypemessage": "msg",
+        "inputtypemessage": "msg",
+        "rejectssl": false,
+        "x": 900,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0bf805adcc39aa75",
+        "type": "mqtt in",
+        "z": "8f865d0fb0191d7e",
+        "name": "MQTT LDR",
+        "topic": "FIAP/edgeGS/HealthGuardEnviroMonitor/Luminosity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe9073219b92d4c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 430,
+        "y": 420,
+        "wires": [
+            [
+                "24ed58d90d92682e"
+            ]
+        ]
+    },
+    {
+        "id": "6768ad61e39fa4f2",
+        "type": "ui_chart",
+        "z": "8f865d0fb0191d7e",
+        "name": "",
+        "group": "d137c7f11bd7cf03",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Luminosidade",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 900,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff39443b718f6ed8",
+        "type": "ui_gauge",
+        "z": "8f865d0fb0191d7e",
+        "name": "",
+        "group": "9d4e3665ca67a014",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 890,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6a53ba1ec32f1550",
+        "type": "mqtt in",
+        "z": "8f865d0fb0191d7e",
+        "name": "MQTT Alerta",
+        "topic": "FIAP/edgeGS/HealthGuardEnviroMonitor/Alert",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "37cbaa867c456dc0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 430,
+        "y": 520,
+        "wires": [
+            [
+                "86953a585ddf8f5f"
+            ]
+        ]
+    },
+    {
+        "id": "86953a585ddf8f5f",
+        "type": "change",
+        "z": "8f865d0fb0191d7e",
+        "name": "Alerta",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.alerta",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 520,
+        "wires": [
+            [
+                "8c8de4c11ed2668a",
+                "fcccbbdaf8b8844f"
+            ]
+        ]
+    },
+    {
+        "id": "fe9073219b92d4c9",
+        "type": "mqtt-broker",
+        "name": "HIVEMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9d4e3665ca67a014",
+        "type": "ui_group",
+        "name": "DHT22",
+        "tab": "781604f2032a8520",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8c6b47122060518d",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "GBS"
+    },
+    {
+        "id": "d137c7f11bd7cf03",
+        "type": "ui_group",
+        "name": "LDR",
+        "tab": "781604f2032a8520",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "37cbaa867c456dc0",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "781604f2032a8520",
+        "type": "ui_tab",
+        "name": "HealthGuard EnviroMonitor",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
