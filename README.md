@@ -11,17 +11,17 @@ Essa solução consiste em um dispositivo instalado capaz de realizar medições
 </div>
 ## Componentes Utilizados no Circuito:
 <li>
-  <ul>ESP32</ul>
-  <ul>DHT22(sensor de umidade e temperatura)</ul>
-  <ul>LDR (sensor de luz)</ul>
-  <ul>LED's (vermelho, amarelo e verde)</ul>
-  <ul>3 resistores 220 Ohms</ul>
-  <ul>1 resistor 10 kOhms</ul>
-  <ul>1 Protoboard</ul>
-  <ul>5 cabos macho-macho</ul>
-  <ul>8 cabos macho-femea</ul>
-  <ul>1 cabo femea-femeea</ul>
-  <ul>1 cabo micro-USB</ul>
+  <ul>- ESP32</ul>
+  <ul>- DHT22(sensor de umidade e temperatura)</ul>
+  <ul>- LDR (sensor de luz)</ul>
+  <ul>- LED's (vermelho, amarelo e verde)</ul>
+  <ul>- 3 resistores 220 Ohms</ul>
+  <ul>- 1 resistor 10 kOhms</ul>
+  <ul>- 1 Protoboard</ul>
+  <ul>- 5 cabos macho-macho</ul>
+  <ul>- 8 cabos macho-femea</ul>
+  <ul>- 1 cabo femea-femeea</ul>
+  <ul>- 1 cabo micro-USB</ul>
 </li>
   
   
