@@ -34,6 +34,6 @@ Os dados são coletados por esse circuito, e o ESP32 conectado à internet pode 
 </div>
 O fluxo IoT dessa aplicação funciona da seguinte forma: O circuito do dispositivo da HealthGuard EnviroMonitor coleta as informações e envia pelo ESP32 via protocolo MQTT para algum broker, disponibilizando as informações. O servidor local do sistema recebe os dados via tópico MQTT e converte-os para dashboards visuais para o profissional de saúde e também faz o envio do alerta vioa WhatsApp para o paciente. Como demonstrado no fluxo a seguir:
 <div align="center">
-  <img src="" width=700px>
+  <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/66262833-6d86-401b-91c8-12ed0c6e43dd" width=700px>
 </div>
 
