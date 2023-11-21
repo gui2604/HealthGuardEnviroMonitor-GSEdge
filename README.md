@@ -38,4 +38,4 @@ O fluxo IoT dessa aplicação funciona da seguinte forma: O circuito do disposit
 </div>
 
 <h4>Link para simulação diretamendo do Wokwi:</h4>
-<a href="https://wokwi.com/projects/381954748161560577">Clique aqui para ir para o simulador da HealthGuard EnviroMonitor no Wokwi!</a>
+<a href="https://wokwi.com/projects/381954748161560577" target="_blank">Clique aqui para ir para o simulador da HealthGuard EnviroMonitor no Wokwi!</a>
