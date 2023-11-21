@@ -28,7 +28,7 @@ Essa solução consiste em um dispositivo instalado capaz de realizar medições
   <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/a0c4fed0-9a8e-486f-b9e0-67f846552910" width=700px>
 </div>
 Os dados são coletados por esse circuito, e o ESP32 conectado à internet pode enviá-los para sistemas de monitoramento. Desde o software do profissional de saúde que possúi clientes cadastrados a fim de acompanhar a salubridade dos ambientes em que eles estão inseridos podendo realizar orientações médicas a fim de prevenir doenças, até mensagens de alerta para o celular do paciente, para que ele receba avisos em tempo real dependendo das condições do ambiente. 
-<div display="flex">
+<div display="flex" align="center">
   <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/6319ec16-9977-4c46-a0b6-a8a4abab67ea" width=700px>
   <img src="" width=700px>
 </div>
