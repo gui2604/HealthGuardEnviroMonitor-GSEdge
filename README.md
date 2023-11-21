@@ -25,6 +25,6 @@ Essa solução consiste em um dispositivo instalado capaz de realizar medições
 </li>
 <h2>Tela do Circuito:</h2>
 <div align="center">
-  <img src="" width=700px>
+  <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/a0c4fed0-9a8e-486f-b9e0-67f846552910" width=700px>
 </div>
   
