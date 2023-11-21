@@ -7,7 +7,7 @@ No mundo moderno, onde passamos a maior parte do nosso tempo em ambientes fechad
 ## HealthGuard EnviroMonitor
 Essa solução consiste em um dispositivo instalado capaz de realizar medições no ambiente com sensores embutidos, tais como: temperatura, umidade e luminosidade. A ideia é coletar e fornecer esses dados para um profissional da saúde em tempo real, a fim de monitor a salubridade do ambiente em que seu paciente está inserido e alertado a respeito dos cuidados e prevenções a serem tomadas. Além disso, a solução IoT empregada também enviará alertas no celular do paciente com mensagens de prevenções a serem tomadas dependendo das condições do ambiente (caso estiver muito calor e seco, se hidratar melhor. Caso estiver com a temperatura alta, muito úmido e escuro, tomar cuidado com a proliferação de fungos e bactérias. E assim por diante...). O dispositivo também possúi LED's visuais (vermelho, amarelo e verde) capaz de ilustrar as condições do ambiente de maneira visual (vermelho: "ambiente insalubre", amarelo:"ambiente não muito salubre" e verde:"ambiente salubre").
 <div align="center">
-  <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/be968a3a-ba93-4c6c-a674-1b3ed451bb31" width="700px">
+  <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/be968a3a-ba93-4c6c-a674-1b3ed451bb31" width=700px>
 </div>
 ## Componentes Utilizados no Circuito:
 <li>
@@ -23,5 +23,8 @@ Essa solução consiste em um dispositivo instalado capaz de realizar medições
   <ul>- 1 cabo femea-femeea</ul>
   <ul>- 1 cabo micro-USB</ul>
 </li>
-  
+## Tela do Circuito:
+<div align="center">
+  <img src="" width=700px>
+</div>
   
