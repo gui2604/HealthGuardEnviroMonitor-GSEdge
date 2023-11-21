@@ -37,3 +37,5 @@ O fluxo IoT dessa aplicação funciona da seguinte forma: O circuito do disposit
   <img src="https://github.com/gui2604/HealthGuardEnviroMonitor-GSEdge/assets/128194162/66262833-6d86-401b-91c8-12ed0c6e43dd" width=700px>
 </div>
 
+<h4>Link para simulação diretamendo do Wokwi:</h4>
+<a href="https://wokwi.com/projects/381954748161560577">Clique aqui para ir para o simulador da HealthGuard EnviroMonitor no Wokwi!</a>
